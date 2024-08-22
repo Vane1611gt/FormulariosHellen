@@ -1,3 +1,4 @@
+/* Reset default styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,6 +6,7 @@
     font-family: Arial, sans-serif;
 }
 
+/* Body styling */
 body {
     display: flex;
     justify-content: center;
@@ -13,21 +15,25 @@ body {
     background-color: #f5f7fa;
 }
 
+/* Container styling */
 .container {
     display: flex;
-    width: 80%;
+    width: 90%;
     max-width: 1200px;
     background: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
     overflow: hidden;
+    padding: 20px;
 }
 
+/* Panel styling */
 .left-panel, .right-panel {
     flex: 1;
-    padding: 40px;
+    padding: 20px;
 }
 
+/* Left panel styling */
 .left-panel {
     display: flex;
     flex-direction: column;
@@ -35,21 +41,26 @@ body {
     align-items: flex-start;
 }
 
+/* Logo styling */
 .logo {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #4CAF50; /* Green color for logo */
+    font-weight: bold;
 }
 
+/* Heading styling */
 h2 {
     margin-bottom: 20px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #333;
 }
 
+/* Social login buttons styling */
 .social-login {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     margin-bottom: 20px;
     width: 100%;
 }
@@ -59,5 +70,119 @@ h2 {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 10px;
-    }
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-login button:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-login img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Separator between social buttons and form */
+.or-divider {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    color: #666;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 1rem;
+    color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+    outline: none;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.forgot {
+    color: #4CAF50;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-login,
+.btn-signup {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login {
+    background-color: #4CAF50;
+}
+
+.btn-login:hover {
+    background-color: #45a049;
+}
+
+.btn-signup {
+    background-color: #007bff;
+}
+
+.btn-signup:hover {
+    background-color: #0056b3;
+}
+
+/* Right panel styling */
+.right-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+}
+
+.feature-image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

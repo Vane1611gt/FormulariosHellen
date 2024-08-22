@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <section class="container">
         <div class="left-panel">
             <div class="logo">🌺 Housy</div>
-            <h2>Welcome Back. Please login to your account.</h2>
+            <h2>Welcome Back! Please log in to your account.</h2>
             <div class="social-login">
                 <button class="btn-facebook">
                     <img src="https://static.vecteezy.com/system/resources/previews/018/930/698/non_2x/facebook-logo-facebook-icon-transparent-free-png.png" alt="Facebook Logo"> 
@@ -21,33 +21,29 @@
                     Login with Xing
                 </button>
             </div>
-            <span>- OR -</span>
+            <span class="or-divider">- OR -</span>
             <form action="" id="login">
                 <label for="email">
                     Email Address
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
                 </label>
                 <label for="password">
                     Password
-                    <input type="password" id="password" name="password">
+                    <input type="password" id="password" name="password" required>
                 </label>
                 <div class="options">
                     <input type="checkbox" id="remember">
                     <label for="remember">Remember me</label>
-                    <span class="forgot">Forgot password</span>
+                    <span class="forgot">Forgot password?</span>
                 </div>
                 <div class="buttons">
                     <button class="btn-login" type="submit">Login</button>
-                    <button type="button">Sign up</button>
+                    <button type="button" class="btn-signup">Sign up</button>
                 </div>
             </form>
         </div>
         <div class="right-panel">
-            <div class="content">
-                <h3>How it works?</h3>
-                <p>Describe your search profile and let us know your wishes for the perfect candidate.</p>
-                <button class="video-btn">▶️</button>
-            </div>
+            <img src="https://previews.123rf.com/images/visualism/visualism2002/visualism200201191/140870419-gradiente-de-arco-iris-de-luz-difuminada-de-color-ilustraci%C3%B3n-de-fondo-abstracto-elegante-moderno-en.jpg" alt="Description of the image" class="feature-image">
         </div>
     </section>
 </body>
